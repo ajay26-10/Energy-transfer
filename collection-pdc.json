@@ -1,0 +1,20 @@
+[
+    {
+        "name": "producerStoragePDC",
+        "policy": "OR('ProducerMSP.member', 'RegulatorMSP.member')",
+        "requiredPeerCount": 1,
+        "maxPeerCount": 2,
+        "blockToLive": 1000,
+        "memberOnlyRead": true,
+        "memberOnlyWrite": true
+    },
+    {
+        "name": "regulatorFinancePDC",
+        "policy": "OR('FinanceMSP.member', 'RegulatorMSP.member')",
+        "requiredPeerCount": 1,
+        "maxPeerCount": 2,
+        "blockToLive": 1000,
+        "memberOnlyRead": true,
+        "memberOnlyWrite": true
+    }
+]
